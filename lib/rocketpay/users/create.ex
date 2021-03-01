@@ -1,5 +1,4 @@
 defmodule Rocketpay.Users.Create do
-
   alias Ecto.Multi
   alias Rocketpay.{Account, Repo, User}
 
@@ -17,8 +16,8 @@ defmodule Rocketpay.Users.Create do
 
   defp insert_account(repo, user) do
     user.id
-      |> account_changeset()
-      |> repo.insert()
+    |> account_changeset()
+    |> repo.insert()
   end
 
   defp account_changeset(user_id) do

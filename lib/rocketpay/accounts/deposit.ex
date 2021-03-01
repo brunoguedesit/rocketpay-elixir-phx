@@ -1,5 +1,4 @@
 defmodule Rocketpay.Accounts.Deposit do
-
   alias Rocketpay.Accounts.Operation
   alias Rocketpay.Repo
 
